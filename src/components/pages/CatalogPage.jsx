@@ -29,15 +29,21 @@ const CatalogPage = () => {
   }, [catalogs, dispatch, limit, page]);
 
   return (
-     <>
-        <Hero/>
+    <>
+      <Hero />
       <CatalogItems catalogs={values} loadMore={loadMore} />
       {values.length === catalogs.length ? (
         <p> End of the List</p>
       ) : (
-        <button type="button" onClick={loadMore}>
-          Load More
-        </button>
+        <div className="flex justify-center items-center">
+          <button
+            type="button"
+            onClick={loadMore}
+            className="text-[16px] underline font-medium leading-6 text-[#3470FF]"
+          >
+            Load More
+          </button>
+        </div>
       )}
     </>
   );
