@@ -1,9 +1,8 @@
 import { useFavorites } from 'components/hooks/useFavorites';
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
-import { AiOutlineClose } from 'react-icons/ai';
-import { HiOutlineMenuAlt2 } from 'react-icons/hi';
+
 import MobMenu from './MobMenu';
 
 const Layout = () => {
